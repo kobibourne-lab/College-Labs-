@@ -10,12 +10,13 @@ public class Lab1Q1
 
 		Thermometer thermA = new Thermometer();		// Create an instance of our Thermometer class
 
-		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
+		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() ); //0.0
 		thermA.setCelsius(20.0);
-		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );
+		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );  //20.0
 		
         Thermometer thermB = new Thermometer();		// Create a second instance of our Thermometer class
 		thermB.setCelsius(10.0);
-		System.out.println("Temp. of Thermometer A is " + thermB.getCelsius() );
+		System.out.println("Temp. of Thermometer B is " + thermB.getCelsius() );  //10.0
 	} // end main
+
 } // end class ThermTest
