@@ -4,7 +4,7 @@
 // Purpose 			: My first class implementation
 
 public class Lab1Q1
-{ // begin class ThermB
+{ // begin class Lab1Q1
 	public static void main(String args[]) 
 	{ // begin main method
 
@@ -19,4 +19,5 @@ public class Lab1Q1
 		System.out.println("Temp. of Thermometer B is " + thermB.getCelsius() );  //10.0
 	} // end main
 
-} // end class ThermTest
+} // end class Lab1Q1
+
