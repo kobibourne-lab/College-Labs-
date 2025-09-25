@@ -14,8 +14,7 @@ public class Lab1Q1
 		thermA.setCelsius(20.0);
 		System.out.println("Temp. of Thermometer A is " + thermA.getCelsius() );  //20.0
 		
-        Thermometer thermB = new Thermometer();		// Create a second instance of our Thermometer class
-		thermB.setCelsius(10.0);
+        Thermometer thermB = new Thermometer(10.0);		// Create a second instance of our Thermometer class
 		System.out.println("Temp. of Thermometer B is " + thermB.getCelsius() );  //10.0
 	} // end main
 
