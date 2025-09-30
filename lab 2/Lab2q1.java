@@ -1,4 +1,7 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Sept-30-2025
+// Purpose 			: My second driver using class
 public class Lab2q1
 {
  
