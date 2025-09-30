@@ -1,6 +1,8 @@
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Sept-30-2025
+// Purpose 			: Driver program for Rectangle class 
 package lab2B;
-
-
 public class Lab2bq1 
 {
     public static void main(String[] args)

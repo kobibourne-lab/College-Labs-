@@ -19,12 +19,6 @@ public class Lab2q1
 
          System.out.println("Room Number " + roomB.getRoomNum() + " Room type " + roomB.getRoomType());
 
-
-
-
-
-
-
     }
 
 }

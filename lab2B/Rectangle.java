@@ -1,18 +1,14 @@
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Sept-30-2025
+// Purpose 			: Rectangle class 
 package lab2B;
-
-/*Develop a java class called Rectangle.
-The class has attributes length and width, each of which defaults to 1 in the constructor. 
-It has set and get methods
-for both length and width. The set methods should verify that length and width
-are each numbers larger than 0.0 and less than or equal to 40.0. Lastly, the class
-should have a toString() method which will return a string like the following:
-"Length = 5, Width = 10”
-Write a suitable driver program to test each of your methods in class Rectangle.
-public class Rectangle*/ 
 public class Rectangle
 {
     private double length;
     private double width;
+    private double area;
+    private double perimeter;
 
     public Rectangle() //default constructor 
     {
@@ -54,10 +50,23 @@ public class Rectangle
                 System.out.println( "width out of value range ");
             } 
     }
+    
 
+    public double getArea()
+    {
+        area = length * width;
+        return area;
+    }
+
+
+    public double getPerimeter()
+    {
+        perimeter = 2 * (length + width);
+        return perimeter;
+    }
     public String toString()
     {
-        return "Length = " + length + " Width = " + width;
+        return "Length = " + length + " Width = " + width + " Area = " + area + " Perimeter = " + perimeter;
     }
     
 }
