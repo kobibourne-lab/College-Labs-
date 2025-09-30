@@ -69,4 +69,22 @@ public class Rectangle
         return "Length = " + length + " Width = " + width + " Area = " + area + " Perimeter = " + perimeter;
     }
     
+    public void printRectangle()
+    {
+        int col; 
+        int row;
+        int index;
+        int jndex;
+        col = (int) width;
+        row = (int) length;
+
+        for(index = 0; index < col; index++)
+            {
+                System.out.print("* ");
+            }
+        for(jndex = 0; jndex < row; jndex++)
+            {
+                System.out.println(" * ");
+            }
+    }
 }
