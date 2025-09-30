@@ -10,24 +10,20 @@ public class Lab2bq3
     public static void main(String[] args)
     { 
         Rectangle RecA = new Rectangle(); //object created - instance of class 
-        //System.out.println("rectangle A default = "  + RecA.toString());
-
-        RecA.setLength(6);
+    
+        RecA.setLength(7);
         RecA.setWidth(5);
 
         Rectangle RecB = new Rectangle(); //object created - instance of class 
-        //System.out.println("rectangle B default = "  + RecB.toString());
         
-        RecB.setLength(-1);
-        RecB.setWidth(41);
+        RecB.setLength(4);
+        RecB.setWidth(10);
         
-        //System.out.println("rectangle A = "  + RecA.toString());
-        //System.out.println("rectangle B = " + RecB.toString());
         RecA.printRectangle();
-        RecB.setLength(9);
-        RecB.setWidth(18);
+        RecB.printRectangle();
+        
 
-        //System.out.println("rectangle B = " + RecB.toString());
+        
     }   
 
     

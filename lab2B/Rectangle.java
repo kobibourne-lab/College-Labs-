@@ -78,13 +78,34 @@ public class Rectangle
         col = (int) width;
         row = (int) length;
 
-        for(index = 0; index < col; index++)
+        for(index = 0; index < col; index++)        //top
             {
                 System.out.print("* ");
             }
-        for(jndex = 0; jndex < row; jndex++)
+        System.out.println();
+
+        for(index = 0; index < row - 2; index++)        //row - 2 cause we have top and bottom 
             {
-                System.out.println(" * ");
+                System.out.print("*");
+                for(jndex = 0; jndex < col - 2; jndex++)
+                    {
+                        System.out.print("  ");
+                    }
+                if( col > 1)
+                    {
+                        System.out.print(" *");
+                    }
+                System.out.println();
+            
             }
+        if( row > 1)
+            {
+                for(index = 0; index < col; index++)       //bottom
+                    {
+                        System.out.print("* ");
+                    }
+            }        
+        System.out.println();
+        
     }
 }
