@@ -11,11 +11,11 @@ public class Lab2q2
 
         roomA.setRoomNum(200);
         roomA.setRoomType("single");
-        roomA.setVacant(1);
+        roomA.setOccupied(true);
         roomA.setRate(100);
 
         HotelRoom roomB = new HotelRoom(201, "double");
-        roomB.setVacant(0);
+        roomB.setOccupied(false);
         roomB.setRate(80);
 
         //HotelRoom roomC = new HotelRoom(202, "single", 0, 90);

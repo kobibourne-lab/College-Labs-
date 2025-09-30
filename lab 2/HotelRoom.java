@@ -7,28 +7,30 @@ public class HotelRoom
  
     private int roomNum;  //variables 
     private String roomType; //private- no other class can use these without getters 
-    private int vacant;
+    private boolean occupied;
     private double rate;
     
-    public HotelRoom()      //constructer , used for room A
+    public HotelRoom()      //constructer , default
     {
         setRoomNum(0);
         setRoomType("");
     }
     
-    public HotelRoom(int roomNum, String roomType) //2nd constructor, used for room B
+    public HotelRoom(int roomNum, String roomType) //2nd constructor, 2 parameters, used for room B
     {
         setRoomNum(roomNum);
         setRoomType(roomType);
     }
 
-    public HotelRoom(int roomNum, String roomType, int vacant, double rate) //3nd constructor, used for room C
+    public HotelRoom(int roomNum, String roomType, boolean occupied, double rate) //3nd constructor, used for room C
     {
         setRoomNum(roomNum);
         setRoomType(roomType);
-        setVacant(vacant);
+        setOccupied(occupied);
         setRate(rate);
     }
+
+
     //(roomNumber, roomType, occupied, rate) 
 
     public int getRoomNum()  //getter
@@ -48,13 +50,13 @@ public class HotelRoom
     {
        this.roomType = roomType; 
     }
-    public int getVacant()
+    public boolean getOccupied()
     {
-        return vacant;
+        return occupied;
     }
-    public void setVacant(int vacant)
+    public void setOccupied(boolean occupied)
     {
-        this.vacant = vacant;
+        this.occupied = occupied;
     }
      public double getRate()
     {
@@ -67,7 +69,20 @@ public class HotelRoom
 
     public String toString()
     {
-        return "HotelRoom [room number= " + roomNum + ", room type= " + roomType + ", vacant= " + vacant + ", rate= " + rate + "]";
+        return "HotelRoom [room number= " + roomNum + ", room type= " + roomType + ", occupied= " + occupied + ", rate= " + rate + "]";
+    }
+
+    public void isOccupied()
+    {
+        if(occupied)
+            {
+                System.out.println(" The room is occupied, cannot double book");
+            }
+        else   
+            {
+                setOccupied(true);
+                System.out.println( " The room is booked and now occupied");
+            }      
     }
 
 }   
