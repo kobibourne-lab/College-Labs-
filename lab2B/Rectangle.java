@@ -80,7 +80,7 @@ public class Rectangle
 
         for(index = 0; index < col; index++)        //top
             {
-                System.out.print("* ");
+                System.out.print("*");
             }
         System.out.println();
 
@@ -89,11 +89,11 @@ public class Rectangle
                 System.out.print("*");
                 for(jndex = 0; jndex < col - 2; jndex++)
                     {
-                        System.out.print("  ");
+                        System.out.print(" ");
                     }
                 if( col > 1)
                     {
-                        System.out.print(" *");
+                        System.out.print("*");
                     }
                 System.out.println();
             
@@ -102,7 +102,7 @@ public class Rectangle
             {
                 for(index = 0; index < col; index++)       //bottom
                     {
-                        System.out.print("* ");
+                        System.out.print("*");
                     }
             }        
         System.out.println();
