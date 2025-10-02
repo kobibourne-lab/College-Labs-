@@ -1,7 +1,7 @@
 // Student Name 	: Kobi Bourne 
 // Student Id Number: C00XXXXXX
 // Date 			: Sept-30-2025
-// Purpose 			: My second class implementation
+// Purpose 			: My hotel calss for driver programs 
 public class HotelRoom
 {
  
@@ -10,13 +10,13 @@ public class HotelRoom
     private boolean occupied;
     private double rate;
     
-    public HotelRoom()      //constructer , default
+    public HotelRoom()      //constructer , default 
     {
         setRoomNum(0);
         setRoomType("");
     }
     
-    public HotelRoom(int roomNum, String roomType) //2nd constructor, 2 parameters, used for room B
+   public HotelRoom(int roomNum, String roomType) //2nd constructor, 2 parameters, used for room B
     {
         setRoomNum(roomNum);
         setRoomType(roomType);
@@ -30,14 +30,11 @@ public class HotelRoom
         setRate(rate);
     }
 
-
-    //(roomNumber, roomType, occupied, rate) 
-
-    public int getRoomNum()  //getter
+    public int getRoomNum()  //getter for roomNum
     {
         return roomNum;
     }
-    public void setRoomNum(int roomNum) //setter
+    public void setRoomNum(int roomNum) //setter for roomNum
     {
        this.roomNum = roomNum; 
     }
@@ -50,7 +47,7 @@ public class HotelRoom
     {
        this.roomType = roomType; 
     }
-    public boolean getOccupied()
+    public boolean getOccupied() //boolean method , is occupied true or false 
     {
         return occupied;
     }
@@ -67,12 +64,12 @@ public class HotelRoom
         this.rate = rate;
     }
 
-    public String toString()
+    public String toString()    //used to print all info for a room 
     {
         return "HotelRoom [room number= " + roomNum + ", room type= " + roomType + ", occupied= " + occupied + ", rate= " + rate + "]";
     }
 
-    public void isOccupied()
+    public void isOccupied()     //checks room booked , if it is , cannot book again, if not gets booked
     {
         if(occupied)
             {
