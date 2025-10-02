@@ -2,7 +2,6 @@
 // Student Id Number: C00XXXXXX
 // Date 			: Sept-30-2025
 // Purpose 			: Driver program 2 for Rectangle class    
-
 public class Lab2bq2 
 {
 

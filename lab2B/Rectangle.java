@@ -2,7 +2,7 @@
 // Student Id Number: C00XXXXXX
 // Date 			: Sept-30-2025
 // Purpose 			: Rectangle class 
-package lab2B;
+
 public class Rectangle
 {
     private double length;
