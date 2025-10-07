@@ -1,25 +1,18 @@
-/*Provide another driver program Clock.java that will create a Time object - you should
-pass to the Time constructor method the current time in hours and minutes. Hint:
-use java.util.Calendar to create the time object as follows:
-Calendar cal = Calendar.getInstance();
-Time t = new Time (cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE));
-Next, write a loop that calls method tick() every second and then prints the
-stored time. The loop (and program) should terminate when the stored time
-advances to the next minute.
-Hint: to find out when a second has passed you will need to use
-System.currentTimeMillis() which returns the number of milliseconds
-elapsed since January 1, 1970. There are 1000 milliseconds in 1 second.
-*/ import java.util.Calendar;
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Sept-30-2025
+// Purpose 			: CLOCK using time class 
+import java.util.Calendar;
 public class Clock 
 {
     public static void main(String[] args) 
     {
         Calendar cal = Calendar.getInstance();
-        Time t = new Time (cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE));
+        Time t = new Time (cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE)); // new time object
 
-        System.out.println(t.toString());
+        System.out.println(t.toString()); // calls to string method 
 
-        long startTime = System.currentTimeMillis();
+        long startTime = System.currentTimeMillis();    //new long set using .currentTimeMillis
         long currentTime = startTime;
         int oldMin = cal.get(Calendar.MINUTE);
         int newMin = oldMin;
@@ -31,7 +24,7 @@ public class Clock
                         currentTime = System.currentTimeMillis();
                     }
                 t.tick(); //calls tick , second++
-                System.out.println(t.toString());
+                System.out.println(t.toString()); //prints
                 newMin = t.getMinute();
                 startTime = System.currentTimeMillis();
                 currentTime = startTime;
