@@ -51,10 +51,10 @@ public class SavingsAccount
 
     public void calculateMonthlyInterest()
         {
-            double monthlyInterest;
-            monthlyInterest = savingsBalance * annualInterestRate /12;
-            //savingsBalance+=((getSavingsBalance() * getAnnualInterest())/12);
-            savingsBalance = savingsBalance + monthlyInterest;
+            
+            savingsBalance = savingsBalance + (savingsBalance * annualInterestRate) /12;
+            //savingsBalance+=((getSavingsBalance() * getAnnualInterestRate())/12);
+             
         }
 
 
