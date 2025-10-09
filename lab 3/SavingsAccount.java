@@ -18,6 +18,12 @@ public class SavingsAccount
             nextAccountNum++;               //increments 
             setAccountNum(nextAccountNum);     //sets account number as next acc num which is +1
         }
+    public SavingsAccount(double balance)
+        {
+            this(); //what does this do 
+            setSavingsBalance(balance);
+        }
+
 
     public int getAccountNum()
         {
@@ -55,6 +61,11 @@ public class SavingsAccount
             savingsBalance = savingsBalance + (savingsBalance * annualInterestRate) /12;
             //savingsBalance+=((getSavingsBalance() * getAnnualInterestRate())/12);
              
+        }
+    
+    public String toString()
+        {
+            return "account" + accountNum + " balance " + savingsBalance;
         }
 
 

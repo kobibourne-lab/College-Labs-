@@ -67,7 +67,7 @@ public class BankCustomer
                     }
             }
 
-        public double balance()
+        public double balance(SavingsAccount[] savingsAccounts) // added para
             {
                 double balance = 0;
                 for(int i = 0; i < savAccounts.length; i++)
@@ -82,7 +82,7 @@ public class BankCustomer
 
         public String summary()    //used to print info for bank customer 
             {
-                return "bank customer [name = " + name + "address" + address + "savAccounts " + savAccounts + " ]";
+                return "bank customer [name = " + name + " address = " + address + "]";
                 
             }
 
