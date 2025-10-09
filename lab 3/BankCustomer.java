@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BankCustomer 
 {
     private String name;
@@ -79,11 +81,12 @@ public class BankCustomer
                     }
                 return balance; 
             }
-
-        public String summary()    //used to print info for bank customer 
+        
+        public String toString()    //used to print info for bank customer 
             {
-                return "bank customer [name = " + name + " address = " + address + "]";
+                return "bank customer [name = " + name + ",  address = " + address + ",  Savings account= " + Arrays.toString(savAccounts) +  "]" ;
                 
             }
+        
 
 }

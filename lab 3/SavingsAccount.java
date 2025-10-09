@@ -2,7 +2,7 @@
 // Student Id Number: C00XXXXXX
 // Date 			: Sept-30-2025
 // Purpose 			: Time class for driver programs
-//Time class definition
+
 public class SavingsAccount 
 { // begin class SavingsAccount
 

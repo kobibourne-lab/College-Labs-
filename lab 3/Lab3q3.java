@@ -20,9 +20,11 @@ public class Lab3q3
         bankC1.addAccount(saver1);
         bankC1.addAccount(saver2);
         
-        System.out.println(bankC1.summary());
-        System.out.println("savings = " + bankC1.balance(bankC1.getSavAccounts()));
+        
         System.out.println(bankC1.toString());
+        System.out.println("Total savings balance = " + bankC1.balance(bankC1.getSavAccounts()));
+
+        
     }
     
 }
