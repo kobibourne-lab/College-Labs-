@@ -1,3 +1,7 @@
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Oct-10-2025
+// Purpose 			: Driver program to test the savings class.
 public class Lab3q2 
 {
     
@@ -6,14 +10,14 @@ public class Lab3q2
         
         SavingsAccount.modifyInterestRate(0.04);    //sets interest rate to 4%
 
-        SavingsAccount saver1 = new SavingsAccount();                  //instantiate object
+        SavingsAccount saver1 = new SavingsAccount();                  //instantiate object saver1
         
         saver1.setSavingsBalance(2000.00);              //sets balance to 2000.00
         saver1.calculateMonthlyInterest();                             //calls method to update balance based on interest rate 
         
-        SavingsAccount saver2 = new SavingsAccount();                   //instantiate object
+        SavingsAccount saver2 = new SavingsAccount();                   //instantiate object saver2
             
-        saver2.setSavingsBalance(2000.00);
+        saver2.setSavingsBalance(2000.00);               
         saver2.calculateMonthlyInterest();
 
         System.out.println("Balance for saver1 : £"+saver1.getSavingsBalance());    //prints updated balance after interest 

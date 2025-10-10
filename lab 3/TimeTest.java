@@ -1,7 +1,7 @@
 // Student Name 	: Kobi Bourne 
 // Student Id Number: C00XXXXXX
 // Date 			: Sept-30-2025
-// Purpose 			: Driver program to test the Time class.
+// Purpose 			: Driver program to test the Time class
 public class TimeTest
 {
 	public static void main (String args[])
