@@ -2,64 +2,88 @@
 public class Employee 
 
 {
-    
-    private String manager;
-    private String staff;
-    private String name;
-    private String id;
 
 
+    private String fname;
+    private String lname;
+    private Address address; 
+    private static int nextstaffnumber=1000;
+    private int employeeNumber;
+    private String empType;
+    private String comCarType; 
 
     //constructors 
-public Employee(String street, String city, String county)
-    {
-        setStreet(street);
-        setCity(city);
-        setCounty(county);
-    }
-
-
     //getters && setters
-public String getStreet()
+public Employee(String fname, String lname, Address address, String empType)
+    {   
+        setEmployeeNumber(nextstaffnumber);
+        setFname(fname);
+        setLname(lname);
+        setAddress(address);
+        setEmpType(empType);
+
+    }   
+
+public String getFname()
     {
-        return street;
+        return fname;
     }
 
-public void setStreet( String street)
+public void setFname( String fname)
     {
-        this.street = street; 
+        this.fname = fname; 
     }
 
 
-public String getCounty()
+public String getLname()
     {
-        return county;
+        return lname;
     }
 
-public void setCounty( String county)
+public void setLname( String lname)
     {
-        this.county = county; 
+        this.lname = lname; 
     }
     
-public String getCity()
+public Address getAddress ()
     {
-        return city;
+        return address;
     }
 
-public void setCity( String city)
+public void setAddress( Address address) // dont not understand 
     {
-        this.city = city; 
+        this.address = address; 
     }
 
-public String toString()
+public int getEmployeeNumber()
     {
-        return "Address --> Street: " + street + " City: " + city + " County: " + county;
+        return employeeNumber;
     }
 
+public void setEmployeeNumber(int employeeNumber)
+    {
+        this.employeeNumber = employeeNumber;
+    }
 
+public String getEmpType()
+    {
+        return empType;
+    }
 
+public void setEmpType(String empType)
+    {
+        this.empType = empType;
+    }
 
+public String getComCarType()
+    {
+        return comCarType;
+    }
 
+public void setComCarType(String comCarType)
+    {
+        this.comCarType = comCarType;
+    }
 
 }
 
