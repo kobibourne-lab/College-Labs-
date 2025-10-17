@@ -11,7 +11,7 @@ public class Employee
     private int employeeNumber;
     private String empType;
     private String comCarType;
-    private int numOfStaff = nextstaffnumber - 1000; 
+    private static int numOfStaff = 0; 
 
     //constructors 
     
@@ -24,17 +24,17 @@ public Employee(String fname, String lname, Address address, String empType)
         setEmpType(empType);
         setNumOfStaff(numOfStaff);
         nextstaffnumber++;
-        numOfStaff++;               //might need to be moved
+        numOfStaff++;               //move?
     }   
 //getters && setters
-public int getNumOfStaff()
+public static int getNumOfStaff()
     {
         return numOfStaff;
     }
 
-public void setNumOfStaff(int numOfStaff)
+public static void setNumOfStaff(int numOfStaff)
     {
-        this.numOfStaff = numOfStaff; 
+        this.numOfStaff = numOfStaff; //??
     }
 
 public String getFname()
@@ -63,7 +63,7 @@ public Address getAddress ()
         return address;
     }
 
-public void setAddress( Address address) // dont not understand 
+public void setAddress( Address address) 
     {
         this.address = address; 
     }
