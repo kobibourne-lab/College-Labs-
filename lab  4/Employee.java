@@ -11,7 +11,7 @@ public class Employee
     private int employeeNumber;
     private String empType;
     private String comCarType;
-    private static int numOfStaff = 0; 
+    
 
     //constructors 
     
@@ -22,20 +22,9 @@ public Employee(String fname, String lname, Address address, String empType)
         setLname(lname);
         setAddress(address);
         setEmpType(empType);
-        setNumOfStaff(numOfStaff);
         nextstaffnumber++;
-        numOfStaff++;               //move?
     }   
 //getters && setters
-public static int getNumOfStaff()
-    {
-        return numOfStaff;
-    }
-
-public static void setNumOfStaff(int numOfStaff)
-    {
-        this.numOfStaff = numOfStaff; //??
-    }
 
 public String getFname()
     {
@@ -98,6 +87,10 @@ public void setComCarType(String comCarType)
         this.comCarType = comCarType;
     }
 
+public int numOfEmployees ()
+    {
+        return nextstaffnumber - 1000;
+    }
 //toString   
 public String toString()
     {
@@ -105,10 +98,7 @@ public String toString()
         return "Employee---" + fname + lname + " Address " + address + " rank " + empType + " num " + employeeNumber + "car " + comCarType;
     } 
 
-public int numOfEmp(int numOfStaff)
-    {
-        return numOfStaff;
-    }
+
 
 }
 
