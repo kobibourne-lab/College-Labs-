@@ -1,9 +1,9 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: 17-10-2025
+// Purpose 			: class for Employees 
 public class Employee 
-
 {
-
-
     private String fname;
     private String lname;
     private Address address; 
@@ -87,7 +87,7 @@ public void setComCarType(String comCarType)
         this.comCarType = comCarType;
     }
 
-public int numOfEmployees ()
+public static int numOfEmployees ()
     {
         return nextstaffnumber - 1000;
     }
