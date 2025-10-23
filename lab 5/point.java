@@ -1,12 +1,12 @@
 // Student Name 	: Kobi Bourne 
 // Student Id Number: C00XXXXXX
 // Date 			: 23-10-2025
-// Purpose 			: class point
+// Purpose 			: Super class point
 public class Point
 {
 
-    protected int x;
-    protected int y;
+    protected int x;    //variables 
+    protected int y;    //protected means it can be used by subclasses 
 
     //constructor
 
@@ -16,8 +16,8 @@ public class Point
             setY(y);
         }
 
-    // gets sets 
-    public int getX() 
+    // getters and setters 
+    public int getX()          
         {
             return x;
         }
@@ -40,7 +40,7 @@ public class Point
 
 
 
-public String toString()
+public String toString()        //method to print points details 
         {
             return " Point: x = " + x + " Y = " + y;
         }

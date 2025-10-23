@@ -10,6 +10,6 @@ public static void main (String args[])
         Circle myCircle = new Circle(15, 30, 5);    //creates new point object, passes values in for parameters
         System.out.println(myPoint.toString());      //prints mypoint object details 
         System.out.println(myCircle.toString());     //prints mycricle object details 
-}
+    }
 }
     
