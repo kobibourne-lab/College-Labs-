@@ -43,6 +43,7 @@ public class Student extends Person
             {
                 System.out.println("Course: " + courses[i] + " Grade: " + grades[i]);
             }
+        
     }
 
     public double getAverageGrade()
