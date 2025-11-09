@@ -3,7 +3,7 @@
 // Date 			: 09-11-2025
 // Purpose 			: Teacher class
 
-import java.util.Arrays;
+
 
 public class Teacher extends Person
 {
@@ -23,17 +23,13 @@ public class Teacher extends Person
     {
         for(int i = 0; i < numCourses; i++)
             {
-                if(courses[i] == course)
+                if (courses[i].equals(course))
                     {
                         return false;
                     }
-                
-            else
-                {
-                    courses[numCourses]=course;
-                    numCourses++;
-                }    
-            }
+            } 
+        courses[numCourses]=course;
+        numCourses++;
         return true;
     }
     
@@ -41,7 +37,7 @@ public class Teacher extends Person
     {
         for (int i = 0; i < numCourses; i++) 
             {
-                if (courses[i] == course) 
+                if (courses[i].equals(course)) 
                     {
                         // Shift remaining courses left
                         for (int j = i; j < numCourses - 1; j++) 
@@ -58,12 +54,7 @@ public class Teacher extends Person
 
     @Override
     public String toString() {
-        return "Teacher [numCourses=" + numCourses + ", courses=" + Arrays.toString(courses) + "]";
+        return "Teacher: " + getName() + "(" + getAddress() + ")";
     }
-    
-
-
-
-
 
 }

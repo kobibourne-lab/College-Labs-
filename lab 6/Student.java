@@ -2,7 +2,7 @@
 // Student Id Number: C00XXXXXX
 // Date 			: 09-11-2025
 // Purpose 			: Student class
-import java.util.Arrays;
+
 public class Student extends Person
 {
     //variables 
@@ -57,10 +57,16 @@ public class Student extends Person
         average = sum / numCourses;
         return average;
     }
-
+    @Override
     public String toString() 
     {
-        return "Student [toString()=" + super.toString() + "courses" + Arrays.toString(courses) +  "grades" + Arrays.toString(grades) + "]";
+        String print = "Student " + super.toString() + " ";
+        for(int i = 0; i < numCourses;i++)
+        {
+            print = print  + courses[i] + ":" +  grades[i] + " ";
+        }
+        
+        return print;
     }
 
 }
