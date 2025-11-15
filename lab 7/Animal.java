@@ -1,14 +1,17 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: Nov-15-2025
+// Purpose 			: My Animal super class
 public class Animal 
 {
 //variables
     private int age;
     private String type; 
-    private String gender;
+    private char gender;
 
     
 //constructor 
-    public Animal(String type, int age, String gender) 
+    public Animal(String type, int age, char gender) 
     {
         this.age = age;
         this.type = type;
@@ -43,12 +46,12 @@ public class Animal
         this.type = type;
     }
 
-    public String getGender() 
+    public char getGender() 
     {
         return gender;
     }
 
-    public void setGender(String gender) 
+    public void setGender(char gender) 
     {
         this.gender = gender;
     }
@@ -74,7 +77,7 @@ public class Animal
     @Override
     public String toString() 
     {
-        return "Animal [type=" + type + ", age=" + age + ", gender=" + gender + "]";
+        return "Animal [type= " + type + ", age= " + age + ", gender= " + gender + "]";
     }
 
 }
