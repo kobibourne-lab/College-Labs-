@@ -20,7 +20,7 @@ public class Vet
     {
         System.out.println("[ " + name + "] is vaccinating ");
        
-        if(animal instanceof Dog)
+        if(animal instanceof Dog) //checks type of object
             {
                 System.out.println("Dog has been vaccinated: " + animal.toString());
             }

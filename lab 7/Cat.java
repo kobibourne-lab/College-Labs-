@@ -4,20 +4,20 @@
 // Purpose 			: My Cat sub class
 public class Cat extends Animal
 {
-
+//constructor
    public Cat(String type, int age, char gender)
    {
     super(type, age, gender);
    }
     
-   //methods 
-   @Override
+//methods 
+   @Override //dont actually need this, left there for reminder
     public void eat()
     {  
         System.out.println("Cat is eating ");
     }
 
-    @Override
+    @Override //overrides without as method signatures match ones in Animal
     public void sleep()
     {
         
@@ -31,7 +31,7 @@ public class Cat extends Animal
         System.out.println("Meow! ");
     }
 
-    public void spin()
+    public void spin()  //cat only method 
     {
         System.out.println("Cat spins");
     }

@@ -5,13 +5,14 @@
 public class Dog extends Animal 
 {
     
-public Dog(String type, int age, char gender)
-   {
-    super(type, age, gender);
-   }
+//constructor
+    public Dog(String type, int age, char gender)
+    {
+        super(type, age, gender);
+    }
     
 
-//methods 
+// Animal methods 
     public void eat()
     {
         
@@ -29,9 +30,9 @@ public Dog(String type, int age, char gender)
         
         System.out.println("Woof! ");
     }
-
-    public void sit()
-    {
+//dog only method
+    public void sit()  
+    {   
         System.out.println("Dog is now sitting");
     }
 
