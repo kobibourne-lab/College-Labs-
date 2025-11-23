@@ -1,9 +1,10 @@
-public class Student extends Person
+
+public class Student1 extends Person1
 {
 
     private String course;
 
-    public Student(String name, String course)
+    public Student1(String name, String course)
     {
         super(name);
         this.course = course;

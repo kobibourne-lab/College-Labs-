@@ -1,8 +1,9 @@
-public class Employee extends Person
+
+public class Employee1 extends Person1
 {
     private double annualSalary;
 
-    public Employee(String name, double annualSalary)
+    public Employee1(String name, double annualSalary)
     {
         super(name);
         this.annualSalary = annualSalary;
