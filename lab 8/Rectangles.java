@@ -1,15 +1,18 @@
-public class Rectangle extends TwoDShape 
+public class Rectangles extends TwoDShape 
 {
-	
+	//vars
 	private double length;
 	private double breadth;
 	
-	public Rectangle(String name, String colour, double length, double breadth) 
+	//constructor
+	public Rectangles(String name, String colour, double length, double breadth) 
     {
 		super(name, colour);
 		setLength(length);
 		setBreadth(breadth);
 	}
+
+	//gets sets 
 	public double getLength() 
     {
 		return length;
@@ -27,6 +30,7 @@ public class Rectangle extends TwoDShape
 		this.breadth = breadth;
 	}
 	
+	//methods
 	@Override
 	public double area() 
     {
@@ -35,7 +39,7 @@ public class Rectangle extends TwoDShape
 	@Override
 	public String toString() 
     {
-		return (super.toString() + "\nLength = " + length + "\nBreadth = " + breadth);
+		return (super.toString() + "\nLength = " + length + "\nBreadth = " + breadth + "\nArea " + area());
 	}
 
 }
