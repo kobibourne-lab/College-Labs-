@@ -1,4 +1,7 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: 28-11-2025
+// Purpose 			: super class LibraryItem 
 public abstract class LibraryItem 
 {
 
@@ -34,7 +37,7 @@ public abstract class LibraryItem
     @Override
     public String toString() 
     {
-        return "LibraryItem [type=" + type + ", ID=" + ID + "]";
+        return "LibraryItem [type = " + type + ", ID = " + ID + "]";
     }
 
     

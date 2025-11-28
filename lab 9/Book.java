@@ -1,11 +1,15 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: 23-11-2025
+// Purpose 			: Book class extending LibraryItem 
 public class Book extends LibraryItem implements LoanItem
 {
-
-    String author;
-    String title;
-    int numPages;
+    //vars
+    private String author;
+    private String title;
+    private int numPages;
     
+    //constructor
     public Book(String type, String ID, String author, String title, int numPages) 
     {
         super(type, ID);
@@ -14,6 +18,7 @@ public class Book extends LibraryItem implements LoanItem
         this.numPages = numPages;
     }
 
+    //gets && sets
     public String getAuthor() 
     {
         return author;
@@ -43,18 +48,19 @@ public class Book extends LibraryItem implements LoanItem
     {
         this.numPages = numPages;
     }
-
+    
+    //price method
     @Override
     public double calculatePrice() 
     {
         return numPages * 0.05;  
     }
 
-
+    //toString
     @Override
     public String toString() 
     {
-        return super.toString() +  " = [author= " + author + ", title= " + title + ", numPages= " + numPages + " price= " + calculatePrice() + "]";
+        return super.toString() +  "\n[author= " + author + ", title= " + title + ", numPages= " + numPages + " price= " + calculatePrice() + "]";
     }
 
     

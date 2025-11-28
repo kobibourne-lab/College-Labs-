@@ -1,12 +1,16 @@
-
+// Student Name 	: Kobi Bourne 
+// Student Id Number: C00XXXXXX
+// Date 			: 23-11-2025
+// Purpose 			: CD class extending LibraryItem 
 public class CD extends LibraryItem implements LoanItem
 
 {
-
-    String band;
-    String title;
-    int numTracks;
+    //vars
+    private String band;
+    private String title;
+    private int numTracks;
     
+    //constructor
     public CD(String type, String ID, String band, String title, int numTracks) 
     {
         super(type, ID);
@@ -15,6 +19,7 @@ public class CD extends LibraryItem implements LoanItem
         this.numTracks = numTracks;
     }
 
+    //gets && sets
     public String getBand() 
     {
         return band;
@@ -44,31 +49,17 @@ public class CD extends LibraryItem implements LoanItem
         this.numTracks = numTracks;
     }
 
+    //price method
     @Override
     public double calculatePrice() 
     {
         return numTracks * 0.50;  
     }
-
+    //toString
     @Override
     public String toString() 
     {
-        return super.toString() +   " = [band= " + band + ", title= " + title + ", numTracks= " + numTracks + " price= " + calculatePrice() + "]";
+        return super.toString() +   " \n[band= " + band + ", title= " + title + ", numTracks= " + numTracks + " price= " + calculatePrice() + "]";
     } 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
 }
