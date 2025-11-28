@@ -44,6 +44,7 @@ public class CD extends LibraryItem implements LoanItem
         this.numTracks = numTracks;
     }
 
+    @Override
     public double calculatePrice() 
     {
         return numTracks * 0.50;  
@@ -52,8 +53,8 @@ public class CD extends LibraryItem implements LoanItem
     @Override
     public String toString() 
     {
-        return super.toString() +   "CD [band=" + band + ", title=" + title + ", numTracks=" + numTracks + "]";
-    }
+        return super.toString() +   " = [band= " + band + ", title= " + title + ", numTracks= " + numTracks + " price= " + calculatePrice() + "]";
+    } 
 
 
 

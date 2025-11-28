@@ -44,7 +44,7 @@ public class Book extends LibraryItem implements LoanItem
         this.numPages = numPages;
     }
 
-
+    @Override
     public double calculatePrice() 
     {
         return numPages * 0.05;  
@@ -54,7 +54,7 @@ public class Book extends LibraryItem implements LoanItem
     @Override
     public String toString() 
     {
-        return super.toString() +  "Book [author=" + author + ", title=" + title + ", numPages=" + numPages + "]";
+        return super.toString() +  " = [author= " + author + ", title= " + title + ", numPages= " + numPages + " price= " + calculatePrice() + "]";
     }
 
     
