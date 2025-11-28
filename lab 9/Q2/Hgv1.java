@@ -40,8 +40,13 @@ public class Hgv1 extends RoadVehicle1 implements ImportDuty
 	@Override
 	public String toString() 
 	{
-		return "Hgv1 = " + super.toString() +" [cargo=" + cargo + "]";
+		return "Hgv1 = " + super.toString() +" cargo = " + cargo  +"]";
 	}
 
+	
+	public String toStringD() 
+	{
+		return "Hgv1 = " + super.toString() +" cargo = " + cargo  + ", Import Duty Price = " + calculateDuty() + "]";
+	}
 	
 }

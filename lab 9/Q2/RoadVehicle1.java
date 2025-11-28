@@ -56,7 +56,7 @@ public abstract class RoadVehicle1
     @Override
     public String toString() 
     {
-        return " [wheels=" + wheels + ", passengers=" + passengers + ", price=" + price + "]";
+        return " [wheels = " + wheels + ", passengers = " + passengers + ", price = " + price + ",";
     }
 
 }

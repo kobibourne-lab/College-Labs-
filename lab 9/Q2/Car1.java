@@ -39,9 +39,15 @@ public class Car1 extends RoadVehicle1 implements ImportDuty
     }
 
     @Override
-    public String toString() {
-        return "Car1 = " + super.toString() + "  [carType=" + carType + "]";
+    public String toString() 
+    {
+        return "Car1 = " + super.toString() + " carType = " + carType + "]";
     }
+
+    public String toStringD() 
+	{
+		return "Car1 = " + super.toString() + " carType = " + carType + ", Import Duty Price = " + calculateDuty() + "]";
+	}
 
     
 }
